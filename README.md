@@ -43,6 +43,9 @@ Case Study \& Documentation
 
 * Design Document: https://docs.google.com/document/d/1VEIonDoEPowLT9H4HkOguPLGcT\_XMS9nnAMak8zoTlw/edit?usp=sharing
 
+* Updates:
+- A better design system structure was added to the design document.
+
 
 
 
