@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Log In | Cupid's Board</title> 
+    </head> 
+    <body> 
+        <header> 
+            <nav> 
+                <a href="index.html">Cupid's Board</a> 
+                <a href="signup.html">Sign Up</a> 
+            </nav> 
+        </header> 
+        <main> 
+            <section aria-labelledby="login-heading"> 
+                <h1 id="login-heading">Welcome Back</h1> 
+                <p>Log in to continue building your board.</p>
+                <form action="dashboard.html" method="post">
+                    <fieldset>
+                        <legend>Account Information</legend>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required minlength="6">
+                    </fieldset>
+
+                    <button type="submit">Log In</button>
+                </form>
+                <p>
+                    Don't have an account?
+                    <a href="signup.html">Sign up</a>
+                </p>
+            </section>  
+        </main>
+        <footer> 
+            <p>© 2026 Cupid's Board</p>
+        </footer>
+    </body>
+</html>
+
+                    
