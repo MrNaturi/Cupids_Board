@@ -6,50 +6,69 @@
   <title>Cupid's Board</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <!-- HEADER + HERO -->
-  <header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#features">Features</a>
-    </nav>
+    <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-icon">
+          <span class="material-symbols-outlined">favorite</span>
+        </div>
+        <h1>Cupid's Board</h1>
+      </div>
 
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <h1>Capture Love, One <em>Note</em> at a Time.</h1>
+      <nav class="nav">
+        <a href="#hero">Hero</a>
+        <a href="#features">Features</a>
+        <a href="#cta">Get Started</a>
+      </nav>
+
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="hero">
+      <div>
+        <h1>
+          Capture Love, One 
+          <span class="highlight">Note</span> 
+          at a Time.
+        </h1>
+
         <p>
-          The digital scrapbook for your most cherished memories.
-          Send messages, photos, and songs in one beautiful place.
+          The digital scrapbook for your most cherished digital memories.
+          Save messages, photos, and songs in one beautiful place.
         </p>
 
         <div class="hero-buttons">
-          <button>Start Your Board</button>
-          <button>View Demo</button>
+          <button class="btn btn-primary">Start Your Board</button>
+          <button class="btn btn-outline">View Demo</button>
         </div>
       </div>
 
       <div class="hero-image">
-        <img src="images/hero-placeholder.png" alt="Illustration representing shared memories">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAozML0a8AVzNREKAYTJ2zNI2tVMXCaXlYsqyFIF_W2wLESpVlJfYT1ks-Y6KktU1BCraIDCyBaO-dDRLQunFlaOhQEbefS1vkoBu3hVwYs_fVmiS5kZPgVCJIXzlixRPJoCVdyc8KpVMyAQge6cNEHVrYll-AM1ibMoIpM6HQpWXv6GDMW344ONI_WdrWAhLU67oJByLd2EhKqaAI-rTxmjvGxaRtxsIgd3MCOk9oIHLKizDKX2vrTcsnaddiGakfBvczuFODhVW0" alt="Scrapbook collage" />
       </div>
     </section>
-  </header>
-
-  <!-- MAIN CONTENT -->
-  <main>
 
     <!-- FEATURES -->
-    <section id="features">
-      <header>
+    <section id="features" class="features-section">
+      <header class="features-header">
         <h2>Our Features</h2>
-        <p>Everything you need to preserve your memories in a modern digital space.</p>
+        <p class="section-subtext">Everything you need to preserve your memories in a modern digital space.</p>
       </header>
 
-      <article>
+      <div class="features">
+      <article class="card card1">
+              <div class="feature-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmPEZiJjHfVAn7AG25rkW7sz-tR_6Xc5zoaPA-SfbHsfOy0TjrFpxUs9lArtrtuzSEHQGSrf1-qtd6nJ5U4H1p00BY94n_OY7l3Nl_Ztb6mKarBtrvh2W3R31rR4YP1DapzcTpOGZKVmgtn0lIlNHCJaTMY_M2vQqUDBHdwjbDGLnsdArkb4Q0VuRyzGxWYYamyOp0jz_409zQ8Tsv75pS91IWJ2y3VUgc2S_YN6fetq7gjBkdSXw5mYjBYHhnI9FCXUdno23D3wM');">
+        <span class="material-symbols-outlined feature-icon">edit_note</span>
+      </div>
         <h3>Create</h3>
         <p>
           Draft heartfelt notes with rich media. Add audio clips, voice notes,
@@ -57,7 +76,10 @@
         </p>
       </article>
 
-      <article>
+      <article class="card card2">
+              <div class="feature-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmulcY41jdgQFHaNhA5JlYmVUgoZitJ_A1v8n_omDZey9ehImcUKheXRgdFDwpuf0sntgiadY8nrrxCCTx7Hdr5S8XLxw8eDc7FMH2rgwOR4zu9ioRUvybwtTcIqI-nui2aBnsOOXW6nr8yuSAU1Pq0-jcpxlhC1Q1jZ_CC1jxXD6jiWEVV5pi72MyrF0K70YJaM9i1Wh1dHAKpox0-bp8TXRcLM-AKVJlFA3Lf3amQdeZ6lkXO7Fr-38c9x2bcb2lHL78X1ejxsc');">
+        <span class="material-symbols-outlined feature-icon">diversity_1</span>
+      </div>
         <h3>Save</h3>
         <p>
           Keep private boards for your inner world. Control what appears on your
@@ -65,18 +87,27 @@
         </p>
       </article>
 
-      <article>
+      <article class="card card3">
+              <div class="feature-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjnMIWjgf8nnmQWO1jStKg4UleYljba957WAPQrxJlOO3F4ljHwh7LRXIwhsNgN1r8vz21w2KILHisVL8gl2fEYYN09fk6R1SKDYdfNsSxbKdBZq-a6jFRhGwrHcsHHsLxCypxM2Mlbl3-P5-uay7hGwgDDK8u6q34YbdsCJ_cnt6wpQpOhQEGaUF8mON7pORm3B43a9mudTDsWfaW6R9oguRQPuUnIYts48_TacMQKSafuRmPuQdFVJvgYrNgQP2mhwfOt1TePyM');">
+        <span class="material-symbols-outlined feature-icon">auto_fix_high</span>
+      </div>
+
         <h3>React</h3>
         <p>
           Express affection, encouragement, and warmth to brighten someone’s day.
         </p>
       </article>
-
+      <section class="card card4 coming-soon">
+              <div class="coming-icon">
+        <span class="material-symbols-outlined">add</span>
+      </div>
       <p><strong>New features coming soon.</strong> Suggest a feature and earn a free month of Premium.</p>
+      </section>
+      </div>
     </section>
 
     <!-- CTA -->
-    <section class="cta">
+    <section id="cta" class="cta">
       <h2>Ready to start your board?</h2>
       <p>
         Join thousands of users turning their memories into beautiful boards
@@ -84,24 +115,33 @@
       </p>
 
       <div class="cta-buttons">
-        <a href="signup.html">Sign up free</a>
-        <a href="index.html">Learn more</a>
-      </div>
-    </section>
-
-  </main>
-
+     <button class="btn btn-light"><a href="signup.html">Sign up free</a></button>
+      <button class="btn btn-outline-light">  <a href="index.html">Learn more</a></button>
+    </main>
   <!-- FOOTER -->
   <footer>
-    <p><strong>Cupid's Board</strong></p>
-    <p>Preserving real-life moments with the charm of a digital space.</p>
+    <section class="container footer-grid">
+      <section>
+        <h3><strong>Cupid's Board</strong></h3>
+        <p>Preserving real-life moments with the charm of a digital space.</p>
+      </section>
 
-    <nav>
-      <a href="index.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+     <div>
+        <h4>Product</h4>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Templates</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy</a>
+      </div>
 
+    <div class="container footer-bottom">
     <p>© 2026 Cupid's Board. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
