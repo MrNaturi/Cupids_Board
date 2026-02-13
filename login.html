@@ -4,6 +4,8 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Log In | Cupid's Board</title> 
+        <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
     </head> 
     <body> 
         <header> 
@@ -16,7 +18,7 @@
             <section aria-labelledby="login-heading"> 
                 <h1 id="login-heading">Welcome Back</h1> 
                 <p>Log in to continue building your board.</p>
-                <form action="dashboard.html" method="post">
+                <form action="board.html" method="post">
                     <fieldset>
                         <legend>Account Information</legend>
 
@@ -27,7 +29,7 @@
                         <input type="password" id="password" name="password" required minlength="6">
                     </fieldset>
 
-                    <button type="submit">Log In</button>
+                   <a href="board.html" class="btn">Log In</a>
                 </form>
                 <p>
                     Don't have an account?
