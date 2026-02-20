@@ -1,8 +1,8 @@
 :root {
     /* Primary */
     --color-red: #F20D0D;
-    --color-primary: var(--color-red)
-    --color-button-primary: var(var(--color-red))
+    --color-primary: var(--color-red);
+    --color-button-primary: var(--color-red);
 
     /* Neutrals */
     --color-cork: #F8DFC1;
