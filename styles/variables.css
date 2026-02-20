@@ -40,6 +40,7 @@
   --space-xxs: 0.125rem;
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
+  --space-smd: 0.75rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
   --space-xl: 2rem;
@@ -67,4 +68,21 @@
   --search-box-shadow: 0 0 0 2px rgba(238,43,108,0.5);
   --search-icon-color: rgba(238,43,108,0.4);
   --notification-color: rgba(238,43,108,0.6);
+
+  /*Note Cards*/
+  --washi-tape-top : -0.75rem;
+  --washi-tape-width: 6rem;
+  --washi-tape-height: 1.5rem;
+  --washi-tape-background: rgba(238,43,108,0.6);
+
+  --postit-background: #fdfd96;
+  --note-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+
+  --cassette-card-background: rgba(238,43,108,0.1);
+  --cassette-body: #222;
+  --cassete-length: 3rem;
+
+  --handwriting-color: #444;
+  --marker-color: rgba(238,43,108,0.4);
+  --marker-small: rgba(238,43,108,0.6);
 }
