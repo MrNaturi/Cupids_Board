@@ -3,101 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cupid's Board - Feed</title>
-  <link rel="stylesheet" href="style.css">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../styles/feed.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Permanent+Marker&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Cupid's Board</title>
 </head>
-
 <body>
+  <nav class="navbar">
 
-  <!-- Header Navigation -->
-  <header>
-    <nav class="container">
-      <div class="nav-logo">
-        <a href="index.html">Cupid's Board</a>
-      </div>
+  <div class="nav-left">
+    <span class="material-icons logo-icon">favorite</span>
+    <h1 class="logo-text">Cupid's Board</h1>
+  </div>
 
-      <div class="search-bar">
-        <label for="search" class="visually-hidden">Search notes</label>
-        <input 
-          type="search" 
-          id="search" 
-          name="search" 
-          placeholder="Search random thoughts..."
-        >
-      </div>
+  <div class="nav-right">
 
-      <div class="nav-actions">
-        <button class="btn btn-outline">Notifications</button>
+    <div class="search-container">
 
-        <a href="board.html">
-          <img 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRGr8Ved7BtCVldKXa-JFkV8ilTRgAF1m7sfV12bTUgjejwhjzrw4UVeKHSN_TVQPv3ICgywv7gnoQdeehoXqKgzCuE8rO4zyDh5DXOGAeoTdWGBBw78sP8Vd9Mntw4oc-iD_IP5w_dPdJyPRpYs6bO0dciyEpY6kmXaklBgvc1CqIV-eWnhocnmtFrW2ofzdeSG-1AGm3J8GWq6Gt-83fGNa5B7VMfWa7gfdpC6O8uymnLGn4p-67oSAe3Jmhdye_UDxgCWEU7oE"
-            alt="User profile picture"
-            class="avatar"
-          >
-        </a>
-      </div>
-    </nav>
-  </header>
+      <input
+        type="text"
+        placeholder="Search memories..."
+        class="search-input"
+      >
 
-  <!-- Main Feed Section -->
-  <main class="container board-section">
-    <h1>Community Feed</h1>
+      <span class="material-icons search-icon">search</span>
 
-    <section class="board-grid">
-
-      <!-- Card 1 -->
-      <article class="note-card pink">
-        <p>"To love and be loved is to feel the sun from both sides."</p>
-        <footer>
-          <small>2 hours ago</small>
-        </footer>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="note-card green">
-        <p>The coffee shop on 5th street has the best atmosphere for daydreaming today.</p>
-        <footer>
-          <small>Yesterday</small>
-        </footer>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="note-card soft">
-        <img 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzwX-LdyHixbjJMbe5kQMK_HAfqy5gR6VxIPWbfy2llt1_6ouEUTE4uFh449NGmwnPzgNOMHKxE0IBwXrLdeTurk3mqBdZNDCe0fQ4A5PWix9BaJXtYaHF0-MD1Fm3QyGyt1md1e9CmsY1mRzx35LDQ8xmzl37UjB65zY-FJS_HSED8WcHU91I0DBno3fPYGdAFzrXGzNc5h1e-La4ORnzbkvxvueg9f19YMaw_6KHLjLkvLnIp1MP3llxZUVV0XQLNlm-WKIRAO8"
-          alt="Couple holding hands at sunset"
-        >
-        <p>First date magic</p>
-      </article>
-
-      <!-- Card 4 -->
-      <article class="note-card">
-        <h3>To-do for tonight</h3>
-        <p>
-          - Peonies<br>
-          - Fancy cheese<br>
-          - Champagne
-        </p>
-      </article>
-
-      <!-- Card 5 -->
-      <article class="note-card pink">
-        <p>Don't forget: I love you more than pizza.</p>
-      </article>
-
-    </section>
-  </main>
-
-  <!-- Floating Add Button -->
-  <a href="board.html" class="fab-container"> <button class="btn btn-accent">+</button> </a>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2026 Cupid's Board</p>
     </div>
-  </footer>
+
+    <div class="nav-actions">
+
+      <button class="notification-btn">
+        <span class="material-icons">notifications</span>
+      </button>
+
+      <div class="profile-container">
+
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRGr8Ved7BtCVldKXa-JFkV8ilTRgAF1m7sfV12bTUgjejwhjzrw4UVeKHSN_TVQPv3ICgywv7gnoQdeehoXqKgzCuE8rO4zyDh5DXOGAeoTdWGBBw78sP8Vd9Mntw4oc-iD_IP5w_dPdJyPRpYs6bO0dciyEpY6kmXaklBgvc1CqIV-eWnhocnmtFrW2ofzdeSG-1AGm3J8GWq6Gt-83fGNa5B7VMfWa7gfdpC6O8uymnLGn4p-67oSAe3Jmhdye_UDxgCWEU7oE"
+          class="profile-image"
+        >
+
+      </div>
+
+    </div>
+
+  </div>
+
+</nav>
 
 </body>
 </html>
