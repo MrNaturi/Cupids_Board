@@ -104,7 +104,7 @@ img {
 header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 1000;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-light);
   background: var(--header-background);
@@ -274,7 +274,7 @@ body.dark .card {
 .features {
   display: grid;
   gap: var(--space-lg);
-  margin-top: (var(--space-xl));
+  margin-top: var(--space-xl);
 }
 .features-section{
   max-width: 1200px;
