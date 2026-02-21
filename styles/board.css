@@ -132,6 +132,36 @@ max-width:1280px;
 margin:auto;
 }
 
+/* Create Note Card */
+.create-note-card {
+  background: var(--color-paper-white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.create-note-card textarea {
+  width: 100%;
+  min-height: 140px;
+  border: none;
+  resize: none;
+  font-family: "Kalam", cursive;
+  font-size: var(--fs-lg);
+  background: transparent;
+  outline: none;
+}
+
+.create-note-card .note-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 /* MASONRY */
 .masonry-grid {
 column-count:4;
