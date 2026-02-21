@@ -3,81 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cupid's Board | Love board</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../styles/board.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Permanent+Marker&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Cupid's Board</title>
 </head>
 
 <body>
 
   <!-- Header / Navigation -->
   <header>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-logo">
-            <a href="feed.html">Cupid's Board</a>
-        </div>
+  <nav class="navbar" aria-label="Primary navigation">
 
-        <div class="search-bar">
-            <label for="search" class="visually-hidden">Search random thoughts</label>
-            <input 
-            type="search" 
-            id="search" 
-            name="search" 
-            placeholder="Search random thoughts..." 
-            aria-label="Search random thoughts"
-            >
-        </div>
-
-        <div>
-            <button class="btn btn-outline" aria-label="Notifications">
-            Notifications
-            </button>
-        </div>
-
-        <div>
-            <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRGr8Ved7BtCVldKXa-JFkV8ilTRgAF1m7sfV12bTUgjejwhjzrw4UVeKHSN_TVQPv3ICgywv7gnoQdeehoXqKgzCuE8rO4zyDh5DXOGAeoTdWGBBw78sP8Vd9Mntw4oc-iD_IP5w_dPdJyPRpYs6bO0dciyEpY6kmXaklBgvc1CqIV-eWnhocnmtFrW2ofzdeSG-1AGm3J8GWq6Gt-83fGNa5B7VMfWa7gfdpC6O8uymnLGn4p-67oSAe3Jmhdye_UDxgCWEU7oE"
-                alt="User profile picture woman smiling">
-        </div>
-     </nav>
-  </header>
+    <!-- Brand -->
+    <div class="nav-left">
+    <span class="material-icons logo-icon">favorite</span>
+    <h1 class="logo-text">Cupid's Board</h1>
+  </div>
+  <div class="nav-right">
+    <div class="search-container">
+      <input
+        type="text"
+        placeholder="Search memories..."
+        class="search-input"
+      >
+      <span class="material-icons search-icon">search</span>
+    </div>
+    <div class="nav-actions">
+      <button class="notification-btn">
+        <span class="material-icons">notifications</span>
+      </button>
+      <div class="profile-container">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRGr8Ved7BtCVldKXa-JFkV8ilTRgAF1m7sfV12bTUgjejwhjzrw4UVeKHSN_TVQPv3ICgywv7gnoQdeehoXqKgzCuE8rO4zyDh5DXOGAeoTdWGBBw78sP8Vd9Mntw4oc-iD_IP5w_dPdJyPRpYs6bO0dciyEpY6kmXaklBgvc1CqIV-eWnhocnmtFrW2ofzdeSG-1AGm3J8GWq6Gt-83fGNa5B7VMfWa7gfdpC6O8uymnLGn4p-67oSAe3Jmhdye_UDxgCWEU7oE"
+          class="profile-image"
+        >
+      </div>
+    </div>
+  </div>
+  </nav>
+</header>
 
 
   <!-- Main Content -->
   <main>
 
     <!-- Create Note Section -->
-    <section class="board-section container" aria-labelledby="create-note-heading">
-      
-      <h1 id="create-note-heading">What’s on your heart? Write it down.</h1>
+    <section class="board-section">
 
-      <article class="note-card" aria-label="Create a new note">
-        
-        <form class="flex" action="#" method="post">
-          
-          <label for="new-note" class="visually-hidden">Write your note</label>
-          
-          <textarea 
-            id="new-note" 
-            name="note" 
-            rows="4" 
-            placeholder="Express yourself..."
-          ></textarea>
+  <div class="create-note-card">
+    <textarea placeholder="What’s on your heart? Write it down..."></textarea>
 
-          <button type="submit" class="btn btn-primary">
-            Pin to Board
-          </button>
+    <div class="note-actions">
+      <div class="note-icons">
+        <!-- icons here -->
+      </div>
+      <button class="btn btn-primary">Pin to Board</button>
+    </div>
+  </div>
 
-        </form>
+  <div class="board-grid">
+    <!-- cards -->
+  </div>
 
-      </article>
-
-    </section>
+</section>
 
 
     <!-- Board Notes Section -->
@@ -106,7 +96,7 @@
         <!-- Note 3 -->
         <article class="note-card soft">
           <figure>
-            <img src="images/memory.jpg" alt="Photo memory from weekend trip">
+            <img src="https://thumbs.dreamstime.com/b/making-most-their-weekend-getaway-happy-group-friends-enjoying-day-together-outside-254594515.jpg" alt="Photo memory from weekend trip">
             <figcaption>Sweet memories from the weekend trip...</figcaption>
           </figure>
           <footer>
@@ -116,7 +106,7 @@
 
         <!-- Note 4 -->
         <article class="note-card pink">
-          <p>Note to self: drink more water and call Mom this weekend.</p>
+          <p>Note to self: I am wayy too beautiful to wait on any man.</p>
           <footer>
             <small>5 hours ago</small>
           </footer>
@@ -125,9 +115,9 @@
         <!-- Note 5 -->
         <article class="note-card">
           <h3>To-Do List</h3>
-          <p>- Buy fresh peonies</p>
-          <p>- Pick up the cake</p>
-          <p>- Write a handwritten letter</p>
+          <p>- Be the early bird and catch all the worms</p>
+          <p>- Take all what belongs to me and even caesar</p>
+          <p>- Eat all the meat and bones so bingo gets nothing</p>
           <footer>
             <small>Just now</small>
           </footer>
@@ -135,7 +125,7 @@
 
         <!-- Note 6 -->
         <article class="note-card soft">
-          <p>Meeting at 3pm tomorrow! Don't forget the mood board prints.</p>
+          <p>Life is beautiful when you let yourself live.</p>
           <footer>
             <small>3 hours ago</small>
           </footer>
@@ -151,7 +141,7 @@
 
         <!-- Note 8 -->
         <article class="note-card green">
-          <p>Dreamt about a giant cupcake last night. Maybe it’s a sign I need sugar?</p>
+          <p>Dreamt about a giant cupcake but woke up to nothing on valentine's day. Ko ye ka fa yin se...yes, you know the song</p>
           <footer>
             <small>Last night</small>
           </footer>

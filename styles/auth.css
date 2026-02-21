@@ -1,0 +1,170 @@
+@import "variables.css";
+
+/* Base */
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(
+    135deg,
+    var(--color-light-orange),
+    var(--color-light-green)
+  );
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+
+header {
+  padding: var(--space-md) var(--space-lg);
+}
+
+header nav a {
+  font-family: "Permanent Marker", cursive;
+  font-size: var(--fs-xl);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Layout */
+
+main {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: var(--space-xl);
+}
+
+/* Auth Card */
+
+.auth-container {
+  background: var(--color-paper-white);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+/* Headings */
+
+.auth-container h1 {
+  margin: 0;
+  font-size: var(--fs-2xl);
+  color: var(--color-primary);
+}
+
+.auth-container p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+/* Inputs */
+
+label {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+input {
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0,0,0,0.1);
+  font-size: var(--fs-base);
+  transition: 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(234, 123, 123, 0.2);
+}
+
+/* Buttons */
+
+.btn {
+  padding: var(--space-md);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-paper-white);
+  box-shadow: var(--shadow-button);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: var(--space-md);
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .auth-container {
+    padding: 2rem;
+  }
+}
+
+.btn {
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-lg);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-paper-white);
+  box-shadow: var(--shadow-button);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  background: var(--color-paper-white);
+  border: 1px solid var(--border-light);
+}
