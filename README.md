@@ -9,7 +9,7 @@ Project Name: Cupid’s Board
 Contributors
 
 * Emmanuel Dania
-* Peace Braide
+* Peace Braide (Case study - https://medium.com/@TheButterflyDev/designing-for-love-with-html5-and-vanilla-css-a-case-study-on-cupids-board-40fd5bff8e44)
 
 
 
