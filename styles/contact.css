@@ -1,0 +1,40 @@
+@import "variables.css";
+
+/* Base */
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(
+    135deg,
+    var(--color-light-orange),
+    var(--color-light-green)
+  );
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Layout */
+
+main {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: var(--space-xl);
+}
+
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: var(--space-md);
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+/* Responsive */
+
+
+

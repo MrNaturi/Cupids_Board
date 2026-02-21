@@ -1,0 +1,88 @@
+:root {
+  --color-red: #eb477e;
+  --color-primary: var(--color-red);
+  --bg-light: #f8f6f6;
+  --bg-dark: #211116;
+  --border-light: #e5dcdf;
+  --border-dark: #3a2a30;
+  --header-background: rgba(248,246,246,0.85);
+  --header-dark-background: rgba(33,17,22,0.85);
+  --card-background: rgba(235, 71, 126, 0.05);
+  --other-card-background: rgba(235, 71, 126, 0.3);
+
+  /* Neutrals & Pastels */
+  --color-cork: #F8DFC1;
+  --color-paper-white: #F5F5F5;
+  --color-pastel-pink: #EAC5C7;
+  --color-pastel-mint: #A9E4DE;
+  --color-pastel-blue: #D9EDF8;
+  --color-pastel-purple: #BDB2FF;
+
+  /* Text */
+  --color-text-dark: #1E1E1E;
+  --color-text-muted: #6B7280;
+  --color-text-white: #FFFFFF;
+  --color-text-highlight: var(--color-red);
+
+  /* Fonts */
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-handwriting: 'Caveat', cursive;
+
+  /* Font sizing */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 2rem;
+  --fs-2xl: 3rem;
+
+  /* Spacing */
+  --space-xxs: 0.125rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-smd: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+  --space-xxxl: 4rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 8px rgba(0,0,0,0.05);
+  --shadow-md: 0 10px 20px rgba(0,0,0,0.08);
+  --shadow-lg: 0 20px 40px rgba(0,0,0,0.15);
+  --shadow-button: 0 10px 20px rgba(235, 71, 126, 0.3);
+
+  --container: 1200px;
+
+  /*Search Bar*/
+  --search-width: 256px;
+  --search-padding: 8px 16px 8px 40px;
+  --search-background: rgba(238,43,108,0.05);
+  --search-box-shadow: 0 0 0 2px rgba(238,43,108,0.5);
+  --search-icon-color: rgba(238,43,108,0.4);
+  --notification-color: rgba(238,43,108,0.6);
+
+  /*Note Cards*/
+  --washi-tape-top : -0.75rem;
+  --washi-tape-width: 6rem;
+  --washi-tape-height: 1.5rem;
+  --washi-tape-background: rgba(238,43,108,0.6);
+
+  --postit-background: #fdfd96;
+  --note-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+
+  --cassette-card-background: rgba(238,43,108,0.1);
+  --cassette-body: #222;
+  --cassete-length: 3rem;
+
+  --handwriting-color: #444;
+  --marker-color: rgba(238,43,108,0.4);
+  --marker-small: rgba(238,43,108,0.6);
+}

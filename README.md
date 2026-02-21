@@ -1,6 +1,6 @@
 Live Project: https://cupids-board.vercel.app/
 
-
+Contribution Sheet: https://docs.google.com/spreadsheets/d/1USxvcin3utnN3qpQtLtQIA0MY-cR-KV5Ky1-z6-YSf4/edit?gid=1697451091#gid=1697451091
 
 Project Name: Cupid’s Board
 
@@ -47,6 +47,51 @@ Case Study \& Documentation
 - A better design system structure was added to the design document.
 
 
+Styling Guide
 
+The project uses a CSS Variable system to ensure consistency and scalable design updates.
 
+---------------------------------------------------------------
 
+Color System
+
+Primary Color: #eb477e
+This is the brand accent color, and we applied it to buttons, highlights, and icons.
+
+Backgrounds: 
+--bg-light is the default light mode
+--header-background & --header-dark-background is what we use for the semi-transparent backgrounds with a blur and a glassy effect.
+
+Neutrals
+We use soft pastels like --color-pastel-pink or --color-pastel-mint for feature cards, visual separation between sections.
+
+Text Colors
+--color-text-dark is the default text colour
+--color-text-muted is the colour for secondary or descriptive text
+--color-text-highlight is to match the brand's primary color
+
+----------------------------------------------------------------------
+
+Typography System
+--font-sans is used for the main ui font
+--font-handwriting is used for the note text
+
+Font Scale
+--fs-xs is for small labels
+--fs-sm is for descriptions
+--fs-base is used as the body text
+--fs-lg is used for card titles
+-fs-xl is used for section headers
+--fx-2xl is used as the heor heading
+
+-------------------------------------------------------------------------
+
+Spacing System
+The spacing follows a predictable scale, with --space-xs being the smallest and --space-xxxl is the largest
+
+------------------------------------------------------------------
+
+Radius and Shapes
+--radius-sm is used for small ui elements
+--radius-md is used for cards
+--radius-lg is used primarily for shaping buttons
