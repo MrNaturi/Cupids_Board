@@ -1,5 +1,11 @@
 @import "variables.css";
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -78,7 +84,7 @@ color:var(--search-icon-color);
 .nav-actions {
 display:flex;
 align-items:center;
-gap: var(--space-md);
+gap:var(-space-md);
 }
 
 
@@ -112,79 +118,166 @@ height:100%;
 object-fit:cover;
 border-radius: var(--radius-full);
 }
-
-/* BOARD PAGE — CONSISTENT WITH FEED */
-
-/* Layout */
-.board-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 2.5rem;
-  align-items: start;
+/* MAIN */
+.corkboard-main {
+min-height:calc(100vh - 72px);
+padding: var(--space-xl);
+overflow-x:hidden;
+background-color: var(--color-cork);
 }
 
-.board-grid .note-card {
-  width: 100%;
-  transition: 300ms;
+/* CONTAINER */
+.board-container {
+max-width:1280px;
+margin:auto;
 }
 
-.note-card:hover {
-  transform: rotate(0deg) scale(1.03);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+/* MASONRY */
+.masonry-grid {
+column-count:4;
+column-gap: var(--space-lg);
 }
 
-/* Base Note Style */
-.note-card {
-  background: var(--color-paper-white);
-  padding: 1.75rem;
-  border-radius: 16px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  position: relative;
+.masonry-item {
+display:inline-block;
+width:100%;
+margin-bottom: var(--space-xl);
+transition:300ms;
+cursor:pointer;
 }
 
-/* Colored variations (same tone as feed) */
-.note-card.pink {
-  background: var(--postit-background);
+.masonry-item:hover {
+transform:scale(1.05);
+z-index:10;
+position:relative;
 }
 
-.note-card.green {
-  background: #dff3e3;
+
+/* ROTATIONS */
+
+.rotate-neg-2 { transform:rotate(-2deg); }
+.rotate-neg-1 { transform:rotate(-1deg); }
+.rotate-pos-1 { transform:rotate(1.5deg); }
+.rotate-pos-2 { transform:rotate(2deg); }
+
+
+/* POLAROID */
+.polaroid-card {
+background: var(--color-paper-white);
+padding: var(--space-md);
+padding-bottom: var(--space-xxl);
+border-radius: var(--space-xs);
+box-shadow:5px 5px 15px rgba(0,0,0,0.2);
+position:relative;
 }
 
-.note-card.soft {
-  background: #fffaf3;
+.polaroid-image {
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+margin-bottom: var(--space-md);
+filter:grayscale(20%);
 }
 
-/* Image inside card */
-.note-card img {
-  width: 100%;
-  border-radius: var(--radius-sm);
-  margin-bottom: var(--space-md);
-  object-fit: cover;
+.polaroid-date {
+position:absolute;
+bottom: var(--space-sm);
+right: var(--space-md);
+font-size: var(--fs-xs);
+color: var(--color-text-muted);
+
 }
 
-/* Footer time */
-.note-card footer {
-  margin-top: var(--space-sm);
-  font-size: var(--fs-xs);
-  color: var(--color-text-muted);
+
+/* WASHI */
+
+.washi-tape {
+position:absolute;
+top: var(--washi-tape-top);
+left:50%;
+transform:translateX(-50%) rotate(2deg);
+width: var(--washi-tape-width);
+height: var(--washi-tape-height);
+background: var(--washi-tape-background);
+mix-blend-mode:multiply;
 }
 
-/* Rotation utility reuse */
-.note-card:nth-child(odd) {
-  transform: rotate(-0.7deg);
+
+/* LEGAL */
+.postit-card {
+background:var(--postit-background);
+padding: var(--space-lg);
+min-height:200px;
+box-shadow: var(--note-shadow);
 }
 
-.note-card:nth-child(even) {
-  transform: rotate(0.7deg);
+
+/* CASSETTE */
+.cassette-card {
+background: var(--cassette-card-background);
+padding: var(--space-md);
+border-radius: var(--radius-md);
+box-shadow: var(--note-shadow);
 }
 
-/* Create Note Card */
-.board-section {
-  max-width: 1200px;
-  margin: 3rem auto;
-  padding: 0 1.5rem;
+.cassette-body {
+background:#222;
+padding: var(--space-lg);
+border-radius: var(--radius-md);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.play-button {
+width:var(--cassete-length);
+height: var(--cassete-length);
+border-radius:50%;
+background: var(--color-primary);
+color: var(--color-paper-white);
+border:none;
+display:flex;
+justify-content:center;
+align-items:center;
+cursor:pointer;
+}
+
+.cassette-footer {
+margin-top: var(--space-smd);
+display:flex;
+justify-content:space-between;
+}
+
+
+/* TEXT */
+
+.handwriting {
+font-family:"Kalam", cursive;
+color: var(--handwriting-color);
+font-size: var(--fs-lg);
+}
+
+.large-text {
+font-size: var(--space-lg);
+}
+
+.marker-title {
+font-family:"Permanent Marker", cursive;
+color: var(--marker-color);
+font-size: var(--fs-lg);
+margin-bottom: var(--space-smd);
+text-transform:uppercase;
+}
+
+.marker-small {
+font-family:"Permanent Marker", cursive;
+font-size: var(--fs-xs);
+color: var(--marker-small);
+}
+
+.duration {
+font-size:10px;
+color:var(--marker-small);
 }
 
 .btn {
@@ -211,43 +304,11 @@ border-radius: var(--radius-full);
   border: 1px solid var(--border-light);
 }
 
-.board-section .btn-primary {
-  margin-top: var(--space-md);
-}
+/* Footer */
 
-body {
-  background: linear-gradient(
-    135deg,
-    var(--color-light-orange),
-    var(--color-light-green)
-  );
-}
-
-/* Create Note Card */
-.create-note-card {
-  background: var(--color-paper-white);
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.create-note-card textarea {
-  width: 100%;
-  min-height: 140px;
-  border: none;
-  resize: none;
-  font-family: "Kalam", cursive;
-  font-size: var(--fs-lg);
-  background: transparent;
-  outline: none;
-}
-
-.create-note-card .note-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+footer {
+  text-align: center;
+  padding: var(--space-md);
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
 }
