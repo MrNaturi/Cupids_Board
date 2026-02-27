@@ -1,0 +1,68 @@
+[
+  {
+    "type": "polaroid",
+    "image": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70",
+    "caption": "You laughing at nothing again",
+    "date": "July 3rd",
+    "rotation": "rotate-pos-2"
+  },  
+  {
+    "type": "postit",
+    "title": "Love Note",
+    "content": "\"I still remember the way the coffee smelled that morning...\"",
+    "rotation": "rotate-pos-1"
+  },  
+  {
+    "type": "polaroid",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDzwX-LdyHixbjJMbe5kQMK_HAfqy5gR6VxIPWbfy2llt1_6ouEUTE4uFh449NGmwnPzgNOMHKxE0IBwXrLdeTurk3mqBdZNDCe0fQ4A5PWix9BaJXtYaHF0-MD1Fm3QyGyt1md1e9CmsY1mRzx35LDQ8xmzl37UjB65zY-FJS_HSED8WcHU91I0DBno3fPYGdAFzrXGzNc5h1e-La4ORnzbkvxvueg9f19YMaw_6KHLjLkvLnIp1MP3llxZUVV0XQLNlm-WKIRAO8",
+    "caption": "First date magic ✨",
+    "date": "June 12th",
+    "rotation": "rotate-neg-2"
+  },
+  {
+    "type": "cassette",
+    "fileName": "VOICE_MEMO_04.wav",
+    "duration": "02:45",
+    "audioSrc": "audio/voice1.wav",
+    "rotation": "rotate-neg-1"
+  },
+  {
+    "type": "postit",
+    "title": "To: You",
+    "content": "I didn't know ordinary days could feel like this.You turned routine into something sacred.",
+    "rotation": "rotate-pos-1"
+  },
+  {
+    "type": "cassette",
+    "fileName": "LAUGH_01.wav",
+    "duration": "00:12",
+    "audioSrc": "audio/laugh_01.wav",
+    "rotation": "rotate-pos-1"
+  },
+  {
+    "type": "polaroid",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "caption": "The beach didnt matter. You did",
+    "date": "September 2nd",
+    "rotation": "rotate-neg-2"
+  },
+  {
+    "type": "postit",
+    "title": "Truth",
+    "content": "I didn't plan to care this much. But here we are.",
+    "rotation": "rotate-neg-1"
+  },
+  {
+    "type": "polaroid",
+    "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+    "caption": "The quiet moments were louder",
+    "date": "October 21st",
+    "rotation": "rotate-neg-2"
+  },
+  {
+    "type": "postit",
+    "title": "Reminder",
+    "content": "Buy her favorite snacks. She pretends she doesn't want them",
+    "rotation": "rotate-neg-1"
+  }
+]
