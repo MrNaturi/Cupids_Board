@@ -1,4 +1,6 @@
 const grid = document.getElementById("masonryGrid");
+const likedMemories = JSON.parse(localStorage.getItem("likedMemories")) || [];
+const pinnedMemories = JSON.parse(localStorage.getItem("pinnedMemories")) || [];
 
 async function loadMemories() {
   try {
@@ -20,6 +22,27 @@ async function loadMemories() {
 }
 
 function generateMemoryHTML(memory) {
+    const isLiked = likedMemories.includes(memory.id);
+    const isPinned = pinnedMemories.includes(memory.id);
+
+  const actionButtons = `
+    <div class="memory-actions">
+      <button class="like-btn ${isLiked ? "liked" : ""}" 
+              data-id="${memory.id}">
+        <span class="material-icons">
+          ${isLiked ? "favorite" : "favorite_border"}
+        </span>
+      </button>
+
+      <button class="pin-btn ${isPinned ? "pinned" : ""}" 
+              data-id="${memory.id}">
+        <span class="material-icons">
+          ${isPinned ? "push_pin" : "push_pin"}
+        </span>
+      </button>
+    </div>
+  `;
+
   switch (memory.type) {
 
     case "polaroid":
@@ -29,6 +52,7 @@ function generateMemoryHTML(memory) {
           <img src="${memory.image}" class="polaroid-image" />
           <p class="handwriting text-center">${memory.caption}</p>
           <span class="polaroid-date">${memory.date}</span>
+                   ${actionButtons}
         </div>
       `;
 
@@ -37,6 +61,7 @@ function generateMemoryHTML(memory) {
         <div class="postit-card">
           <h3 class="marker-title">${memory.title || ""}</h3>
           <p class="handwriting">${memory.content}</p>
+        ${actionButtons}
         </div>
       `;
 
@@ -52,6 +77,7 @@ function generateMemoryHTML(memory) {
             <span class="marker-small">${memory.fileName}</span>
             <span class="duration">${memory.duration}</span>
           </div>
+            ${actionButtons}
         </div>
       `;
 
@@ -59,5 +85,43 @@ function generateMemoryHTML(memory) {
       return "";
   }
 }
+
+document.addEventListener("click", function (e) {
+
+  // LIKE
+  if (e.target.closest(".like-btn")) {
+    const btn = e.target.closest(".like-btn");
+    const id = btn.dataset.id;
+
+    if (likedMemories.includes(id)) {
+      const index = likedMemories.indexOf(id);
+      likedMemories.splice(index, 1);
+    } else {
+      likedMemories.push(id);
+    }
+
+    localStorage.setItem("likedMemories", JSON.stringify(likedMemories));
+    grid.innerHTML = "";
+    loadMemories();
+  }
+
+  // PIN
+  if (e.target.closest(".pin-btn")) {
+    const btn = e.target.closest(".pin-btn");
+    const id = btn.dataset.id;
+
+    if (pinnedMemories.includes(id)) {
+      const index = pinnedMemories.indexOf(id);
+      pinnedMemories.splice(index, 1);
+    } else {
+      pinnedMemories.push(id);
+    }
+
+    localStorage.setItem("pinnedMemories", JSON.stringify(pinnedMemories));
+    grid.innerHTML = "";
+    loadMemories();
+  }
+
+});
 
 loadMemories();
