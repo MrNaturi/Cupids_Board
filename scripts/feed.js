@@ -1,6 +1,8 @@
 const grid = document.getElementById("masonryGrid");
 const likedMemories = JSON.parse(localStorage.getItem("likedMemories")) || [];
 const pinnedMemories = JSON.parse(localStorage.getItem("pinnedMemories")) || [];
+let currentAudio = null;
+let currentButton = null;
 
 async function loadMemories() {
   try {
@@ -122,6 +124,45 @@ document.addEventListener("click", function (e) {
     loadMemories();
   }
 
+});
+document.addEventListener("click", function (e) {
+  const button = e.target.closest(".play-button");
+  if (!button) return;
+
+  const audioSrc = button.dataset.audio;
+  console.log(audioSrc);
+  // If clicking the same button → toggle
+  if (currentButton === button && currentAudio) {
+    if (currentAudio.paused) {
+      currentAudio.play();
+      button.querySelector(".material-icons").textContent = "pause";
+    } else {
+      currentAudio.pause();
+      button.querySelector(".material-icons").textContent = "play_arrow";
+    }
+    return;
+  }
+
+  // If another audio is playing → stop it
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    if (currentButton) {
+      currentButton.querySelector(".material-icons").textContent = "play_arrow";
+    }
+  }
+
+  // Create new audio
+  currentAudio = new Audio(audioSrc);
+  currentButton = button;
+
+  currentAudio.play();
+  button.querySelector(".material-icons").textContent = "pause";
+
+  // Reset icon when finished
+  currentAudio.addEventListener("ended", () => {
+    button.querySelector(".material-icons").textContent = "play_arrow";
+  });
 });
 
 loadMemories();
