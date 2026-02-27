@@ -26,8 +26,8 @@
     "id":"mem4",
     "type": "cassette",
     "fileName": "VOICE_MEMO_04.wav",
-    "duration": "02:45",
-    "audioSrc": "audio/voice1.wav",
+    "duration": "00:02",
+    "audioSrc": "../audio/birds_singing.wav",
     "rotation": "rotate-neg-1"
   },
   {
@@ -41,8 +41,8 @@
     "id": "mem6",
     "type": "cassette",
     "fileName": "LAUGH_01.wav",
-    "duration": "00:12",
-    "audioSrc": "audio/laugh_01.wav",
+    "duration": "00:02",
+    "audioSrc": "../audio/laughing.wav",
     "rotation": "rotate-pos-1"
   },
   {
