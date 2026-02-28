@@ -3,179 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <link href="../styles/board.css" rel="stylesheet">
+  <title>Cupid's Board - My Board</title>
+  
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Permanent+Marker&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Cupid's Board</title>
+  
+  <!-- Stylesheets -->
+  <link href="styles/variables.css" rel="stylesheet">
+  <link href="../styles/board.css" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Header / Navigation -->
   <header>
-  <nav class="navbar" aria-label="Primary navigation">
-
-    <!-- Brand -->
-    <div class="nav-left">
-    <span class="material-icons logo-icon">favorite</span>
-    <h1 class="logo-text">Cupid's Board</h1>
-  </div>
-  <div class="nav-right">
-    <div class="search-container">
-      <input
-        type="text"
-        placeholder="Search memories..."
-        class="search-input"
-      >
-      <span class="material-icons search-icon">search</span>
-    </div>
-    <div class="nav-actions">
-      <button class="notification-btn">
-        <span class="material-icons">notifications</span>
-      </button>
-      <div class="profile-container">
-        <a href="../index.html" class="profile-link" aria-label="Go to home page">
-        <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRGr8Ved7BtCVldKXa-JFkV8ilTRgAF1m7sfV12bTUgjejwhjzrw4UVeKHSN_TVQPv3ICgywv7gnoQdeehoXqKgzCuE8rO4zyDh5DXOGAeoTdWGBBw78sP8Vd9Mntw4oc-iD_IP5w_dPdJyPRpYs6bO0dciyEpY6kmXaklBgvc1CqIV-eWnhocnmtFrW2ofzdeSG-1AGm3J8GWq6Gt-83fGNa5B7VMfWa7gfdpC6O8uymnLGn4p-67oSAe3Jmhdye_UDxgCWEU7oE"
-          class="profile-image"
-        ></a>
-      </div>
-    </div>
-  </div>
-  </nav>
-</header>
-<main class="corkboard-main">
-  <!-- Create Note Section -->
-    <section class="board-section">
-
-  <div class="create-note-card">
-    <textarea placeholder="What’s on your heart? Write it down..."></textarea>
-
-    <div class="note-actions">
-      <div class="note-icons">
-        <!-- icons here -->
-      </div>
-      <button class="btn btn-primary">Pin to Board</button>
-    </div>
-  </div>
-
-  <div class="board-container">
-    <div class="masonry-grid">
-      <!-- ITEM -->
-      <div class="masonry-item rotate-neg-2">
-        <div class="polaroid-card">
-          <div class="washi-tape"></div>
-          <img
-            src="https://thumbs.dreamstime.com/b/making-most-their-weekend-getaway-happy-group-friends-enjoying-day-together-outside-254594515.jpg" alt="Photo memory from weekend trip"
-            class="polaroid-image"
-          >
-          <p class="handwriting text-center">
-            Sweet memories from the weekend
-          </p>
-          <span class="polaroid-date">
-            Dec 25, 2025
-          </span>
-        </div>
-      </div>
-      <div class="masonry-item rotate-pos-1">
-        <div class="postit-card">
-          <h3 class="marker-title">
-            Love Note
-          </h3>
-          <p class="handwriting large-text">
-            "Life is beautiful when you let yourself live it with someone who makes your heart smile."
-          </p>
-        </div>
-      </div>
-     
-         
-      <div class="masonry-item rotate-pos-2">
-        <div class="polaroid-card">
-          <div class="washi-tape"></div>
-            <img
-              src="https://naijmobile.com/wp-content/uploads/PhotoGrid_1585251084344-1536x802.jpg"
-              class="polaroid-image"
-            >
-            <p class="handwriting text-center">
-              Dreamt about a giant cupcake but woke up to nothing on valentine's day. Ko ye ka fa yin se...yes, you know the song
-            </p>
-            <span class="polaroid-date">
-              Feb 14
-            </span>
-        </div>
-      </div>
-      <div class="masonry-item rotate-neg-3">
-        <div class="postit-card">
-          <h3 class="marker-title">Reminder</h3>
-          <p class="handwriting">
-            Take all what belongs to me and even caesar.
-          </p>
-        </div>
-      </div>
-      <div class="masonry-item rotate-pos-1">
-        <div class="postit-card">
-          <div class="letter-header marker-small">
-            To: My crush 
-          </div>
-          <p class="handwriting">
-            I didn't know i was capable of liking you this much. Thank you for improving my stalking skills.
-          </p>
-          <span class="letter-date marker-small">
-            Jan 7
-          </span>
-        </div>
-      </div>
-
-      <div class="masonry-item rotate-pos-2">
-        <div class="polaroid-card">
-          <div class="washi-tape"></div>
-            <img
-              src="https://d.newsweek.com/en/full/2130145/friendship-illustration.jpg"
-              class="polaroid-image"
-            >
-            <p class="handwriting text-center">
-              Friendship is a beautiful thing to experience. Use this one hold body
-            </p>
-            <span class="polaroid-date">
-              Feb 13-14
-            </span>
-        </div>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="nav-left">
+        <span class="material-icons logo-icon">favorite</span>
+        <h1 class="logo-text">Cupid's Board</h1>
       </div>
       
-      <div class="masonry-item rotate-neg-1">
-        <div class="cassette-card">
-          <div class="cassette-body">
-            <button class="play-button">
-              <span class="material-icons"><a href="https://music.youtube.com/watch?v=IUpJIBrsBdY&si=-mmZvr6xhlXKg5QG">play_arrow</a></span>
+      <div class="nav-right">
+        <div class="search-container">
+          <input type="text" placeholder="Search memories..." class="search-input" id="search-input">
+          <span class="material-icons search-icon">search</span>
+        </div>
+        
+        <div class="nav-actions">
+          <a href="feed.html" class="nav-link">
+            <span class="material-icons">explore</span>
+            <span>Feed</span>
+          </a>
+          <button class="notification-btn" aria-label="Notifications">
+            <span class="material-icons">notifications</span>
+          </button>
+          <div class="profile-container">
+            <a href="index.html" class="profile-link">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRGr8Ved7BtCVldKXa-JFkV8ilTRgAF1m7sfV12bTUgjejwhjzrw4UVeKHSN_TVQPv3ICgywv7gnoQdeehoXqKgzCuE8rO4zyDh5DXOGAeoTdWGBBw78sP8Vd9Mntw4oc-iD_IP5w_dPdJyPRpYs6bO0dciyEpY6kmXaklBgvc1CqIV-eWnhocnmtFrW2ofzdeSG-1AGm3J8GWq6Gt-83fGNa5B7VMfWa7gfdpC6O8uymnLGn4p-67oSAe3Jmhdye_UDxgCWEU7oE" class="profile-image" alt="Profile">
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="corkboard-main">
+    
+    <!-- Board Toggle Section -->
+    <section class="board-toggle-section">
+      <div class="toggle-container">
+        <button class="toggle-btn active" data-board="private">
+          <span class="material-icons">lock</span>
+          <span>Private Board</span>
+        </button>
+        <button class="toggle-btn" data-board="public">
+          <span class="material-icons">public</span>
+          <span>Public Board</span>
+        </button>
+      </div>
+      
+      <!-- Share Button (Only visible on private board) -->
+      <button class="btn btn-primary share-board-btn" id="share-btn">
+        <span class="material-icons">share</span>
+        Share Board
+      </button>
+    </section>
+
+    <!-- PRIVATE BOARD -->
+    <section class="board-section" id="private-board">
+      
+      <!-- Create Note Card -->
+      <div class="create-note-card">
+        <textarea placeholder="What's on your heart? Write it down..." aria-label="Write your note"></textarea>
+
+        <!-- Media Preview Area -->
+        <div class="media-preview-area" style="display: none;">
+          <div class="preview-content"></div>
+          <button class="remove-media-btn" aria-label="Remove media">
+            <span class="material-icons">close</span>
+          </button>
+        </div>
+
+        <div class="note-actions">
+          <div class="note-icons">
+            <!-- Photo Upload -->
+            <input type="file" id="photo-upload" accept="image/*" style="display: none;">
+            <button class="icon-btn" onclick="document.getElementById('photo-upload').click()" title="Add Photo">
+              <span class="material-icons">photo_camera</span>
+            </button>
+
+            <!-- Link Button -->
+            <button class="icon-btn" id="add-link-btn" title="Add Link">
+              <span class="material-icons">link</span>
             </button>
           </div>
-          <div class="cassette-footer">
-            <span class="marker-small">
-              lately.wav
-            </span>
-            <span class="duration">
-              03:55 
-            </span>
+          <button class="btn btn-primary" id="pin-note-btn">Pin to Board</button>
+        </div>
+      </div>
+
+      <!-- Private Board Container -->
+      <div class="board-container">
+        <div class="masonry-grid" id="private-grid">
+          <!-- Private notes will appear here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLIC BOARD (Items from feed) -->
+    <section class="board-section" id="public-board" style="display: none;">
+      <div class="public-board-header">
+        <h2 class="marker-title">Items from Feed</h2>
+        <p class="handwriting">Memories you liked or pinned from the community feed</p>
+      </div>
+      
+      <div class="board-container">
+        <div class="masonry-grid" id="public-grid">
+          <!-- Liked/Pinned items from feed will appear here -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Cupid's Board - Made with ❤️ for Love Month</p>
+  </footer>
+
+  <!-- Share Modal -->
+  <div id="share-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="marker-title">Share Your Board</h3>
+        <button class="modal-close" aria-label="Close modal">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="handwriting" style="font-size: 18px; margin-bottom: 20px;">
+          Share your private board with someone special! They'll be able to view all your memories.
+        </p>
+        <div class="form-group">
+          <label for="share-email">Recipient's Email</label>
+          <input type="email" id="share-email" placeholder="their-email@example.com">
+        </div>
+        <div class="share-link-container">
+          <label>Or copy this link:</label>
+          <div class="link-copy-box">
+            <input type="text" id="share-link" readonly value="https://cupidsboard.com/board/your-unique-id">
+            <button class="btn btn-outline" id="copy-link-btn">
+              <span class="material-icons">content_copy</span>
+            </button>
           </div>
         </div>
       </div>
-      
-      <div class="masonry-item rotate-neg-2">
-        <div class="postit-card">
-          <h3 class="marker-title">Paulo Coelho</h3>
-          <p class="handwriting">
-            What hurts us is what heals us.
-          </p>
-        </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="share-cancel-btn">Cancel</button>
+        <button class="btn btn-primary" id="share-send-btn">Send Invitation</button>
       </div>
     </div>
   </div>
-  <button class="btn btn-primary" type="submit"> + </button>
-</main>
-<footer>
-  <p>© 2026 Cupid's Board</p>
-</footer>
-<script src="../scripts/board.js"></script>
+
+  <!-- Link Modal -->
+  <div id="link-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="marker-title">Add Link</h3>
+        <button class="modal-close-link" aria-label="Close modal">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="link-url">URL *</label>
+          <input type="url" id="link-url" placeholder="https://youtube.com/watch?v=..." required>
+        </div>
+        <div class="form-group">
+          <label for="link-title">Title (optional)</label>
+          <input type="text" id="link-title" placeholder="My favorite song">
+        </div>
+        <div class="form-group">
+          <label for="link-description">Description (optional)</label>
+          <textarea id="link-description" placeholder="This song reminds me of..." rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="link-cancel-btn">Cancel</button>
+        <button class="btn btn-primary" id="link-submit-btn">Add Link</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../scripts/board.js"></script>
+
 </body>
 </html>
